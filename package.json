@@ -1,0 +1,20 @@
+{
+  "name": "node-helix-participant",
+  "version": "0.0.1",
+  "description": "A node.js implementation of the Apache Helix Participant",
+  "main": "participant.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/sudowork/node-helix-participant.git"
+  },
+  "author": "Kevin Gao",
+  "dependencies": {
+    "node-zookeeper-client": "~0.2.0",
+    "async": "~0.2.9"
+  },
+  "devDependencies": {
+    "vows": "~0.7.0",
+    "jsdoc": "~3.2.0"
+  }
+}
