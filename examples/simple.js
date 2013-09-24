@@ -35,3 +35,9 @@ var fooParticipant = participant.createParticipant(
   zkConnectString,
   new StateModelFactory(OfflineOnlineStateModel, ['OFFLINE', 'ONLINE'], 'OFFLINE')
 );
+
+fooParticipant.start();
+
+setTimeout(function() {
+  fooParticipant.stop();
+}, 10000);
