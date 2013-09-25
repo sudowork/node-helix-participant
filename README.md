@@ -52,6 +52,16 @@ vows
 vows --spec # npm test does the same thing
 ```
 
+### Continuous Integration
+
+All pushes to this repository will be continuously integrated, will all tests being run with each
+build. The [CI dashboard](https://travis-ci.org/sudowork/node-helix-participant) provides
+information about each each build. Currently, the project is being built against node `v.0.10.x`,
+`v0.8.x`, and `v0.6.x`.
+
+If your commit does not require a new build to be tested, then put `[ci skip]` somewhere in your
+commit message.
+
 ## Dependencies
 
 * [node-zookeeper-client](https://github.com/alexguan/node-zookeeper-client)
