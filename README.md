@@ -1,5 +1,8 @@
 # Node.js Helix Participant
 
+[![Build
+Status](https://travis-ci.org/sudowork/node-helix-participant.png?branch=master)](https://travis-ci.org/sudowork/node-helix-participant)
+
 [Apache Helix](http://helix.incubator.apache.org/) is a cluster management framework that is
 currently being incubated by the Apache Incubator project. The Helix participant is the
 component of the Helix architecture that hosts the distributed resources.
