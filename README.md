@@ -38,6 +38,17 @@ Code style should abide by the following:
 * Use Unix-style newline characters (single `LF`)
 * End files with new lines
 
+### Testing
+
+All significant code changes should be tested. These changes can be manually tested using:
+
+```bash
+# Less verbose output
+vows
+# Full spec output
+vows --spec # npm test does the same thing
+```
+
 ## Dependencies
 
 * [node-zookeeper-client](https://github.com/alexguan/node-zookeeper-client)

@@ -24,9 +24,21 @@ var zkClientMock = ZooKeeperClientMock(),
     messagesPath = format('/%s/INSTANCES/%s/MESSAGES', clusterName, instanceName),
     sessionId = 'abcdef1234567890';
 
+function suppressConsoleOutput(rewiredModule) {
+  var noop = function() { };
+  rewiredModule.__set__('console', {
+    log: noop,
+    info: noop,
+    warn: noop,
+    error: noop
+  });
+}
+
 function getHelixManagerConstructor() {
   // @NOTE: rewire has to be called after mockery.registerMock for the mock to take effect.
-  return rewire('../../lib/helix/HelixManager');
+  var HelixManager = rewire('../../lib/helix/HelixManager');
+  suppressConsoleOutput(HelixManager);
+  return HelixManager;
 }
 
 function setup() {

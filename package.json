@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "A node.js implementation of the Apache Helix Participant",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "vows --spec"
+  },
   "repository": {
     "type": "git",
     "url": "http://github.com/sudowork/node-helix-participant.git"
