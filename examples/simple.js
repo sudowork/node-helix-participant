@@ -7,8 +7,8 @@
 
 var util = require('util'),
     participant = require('../lib/participant'),
-    StateModel = require('../lib/helix/statemodel'),
-    StateModelFactory = require('../lib/helix/statemodelfactory');
+    StateModel = require('../lib/helix/StateModel'),
+    StateModelFactory = require('../lib/helix/StateModelFactory');
 
 var clusterName = process.env.CLUSTER_NAME || 'clusterName',
     instanceName = process.env.INSTANCE_NAME || 'instanceName',
