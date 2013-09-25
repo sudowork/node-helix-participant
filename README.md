@@ -42,3 +42,4 @@ Code style should abide by the following:
 
 * [node-zookeeper-client](https://github.com/alexguan/node-zookeeper-client)
 * [async](https://github.com/caolan/async)
+* [async-stacktrace](https://github.com/Pita/async-stacktrace)
